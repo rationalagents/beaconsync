@@ -5,7 +5,7 @@ Beaconsync is a pattern, and WordPress plugin, associating WordPress content and
 
 Install the plugin
 ---
-Download https://github.com/waded/beaconsync/archive/master.zip then upload the file in the Plugins section of your WordPress site's administration screens.
+Download https://github.com/rationalagents/beaconsync/archive/master.zip then upload the file in the Plugins section of your WordPress site's administration screens.
 
 Don't forget to activate the plugin after you've uploaded it! (I always forget.)
 
