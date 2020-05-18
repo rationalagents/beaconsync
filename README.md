@@ -1,13 +1,13 @@
 What's this for?
 ---
 
-Beaconsync is a pattern, and WordPress plugin, associating WordPress content and Bluetooth 4 proximity beacons. This enables a growing class of app that use beacons for accurate positioning, while keeping content management for such apps simple, familiar, and webby. The pattern & plugin can be applied in apps that use any beacon spec, incuding AltBeacon, although it was originally designed for use with Apple's iBeacon UUID/major/minor metadata.
+beaconsync is a pattern, and WordPress plugin, associating WordPress content and Bluetooth proximity beacons, e.g. Apple's iBeacons. This enables a growing class of app that use beacons for accurate positioning, while keeping content management for such apps simple, familiar, and webby. The pattern & plugin can be applied in apps that use any beacon spec, incuding AltBeacon.
 
 Install the plugin
 ---
 Download https://github.com/rationalagents/beaconsync/archive/master.zip then upload the file in the Plugins section of your WordPress site's administration screens.
 
-Don't forget to activate the plugin after you've uploaded it! (I always forget.)
+Don't forget to activate the plugin after you've uploaded it!
 
 Associate posts with beacons
 ---
@@ -16,15 +16,15 @@ To associate a beacon with a post, edit the post. You'll see **Beacon UUID** and
 
 ![Screenshot of afformentioned sections](https://raw.githubusercontent.com/waded/beaconsync/master/docs/beacon-ui.png "The Beacon UUID and Beacon Major/Minor sections")
 
-Be sure to click "Update" to save your changes. (I forget to do that even more often than I forget to activate plugins.)
+Be sure to click "Update" to save your changes.
 
 Avoid adding more than 1 UUID or major/minor per post, as this may result in undefined behavior in apps. Adding UUID but not major/minor, or major/minor and not UUID is fine though: for example, if each of your beacons has a different UUID you may choose to add only UUID. Apps must support this usage.
 
 How apps should use a beaconsync site
 ---
-A special-purpose app that can detect beacons (for example, a city walking tour app) should sync with a corresponding WordPress beaconsync site using WordPress' Atom or RSS2 protocol feed. This is how the app gets the full list of beacons and associated content it can display from the site.
+A special-purpose app that can detect beacons (for example, a city walking tour app) should retreive a content index to go with those beacons from a corresponding WordPress beaconsync site. It can retrieve the data using the site's Atom or RSS2 feed.
 
-The following examples are for Atom (http://www.rfc-base.org/rfc-4287.html), but RSS2 is quite similar. We recommend you use Atom over RSS2, in case we choose to deprecate RSS2 support in the future.
+The following examples are for Atom (http://www.rfc-base.org/rfc-4287.html), but RSS2 is similar.
 
 A post associated with a beacon has &lt;beacon:uuid&gt; and/or &lt;beacon:majorminor&gt; elements within the corresponding &lt;entry&gt;, for example:
 
@@ -50,5 +50,5 @@ The app controls how much of the feed data it caches, and should sync as often a
 History
 ---
 
-This plugin came about as part of a volunteer effort for Discovery Center of Idaho
+This concept and implementation came about as part of a volunteer effort for Discovery Center of Idaho
 (http://www.dcidaho.org) to improve exhibit signage and depth of available information. Please feel free to use it and give me feedback!
