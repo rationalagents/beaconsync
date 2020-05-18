@@ -14,7 +14,7 @@ Associate posts with beacons
 
 To associate a beacon with a post, edit the post. You'll see **Beacon UUID** and **Beacon Major/Minor** sections (they're very similar to the built-in *Category* section.) Add the beacon's UUID, for example *2b41bbe2-42c2-4b84-ab96-6e9d5509138b*, and major/minor values, for example *0.2* for major value 0, minor value 2, in these sections:
 
-![Screenshot of afformentioned sections](https://raw.githubusercontent.com/waded/beaconsync/master/docs/beacon-ui.png "The Beacon UUID and Beacon Major/Minor sections")
+![Screenshot of afformentioned sections](https://raw.githubusercontent.com/rationalagents/beaconsync/master/docs/beacon-ui.png "The Beacon UUID and Beacon Major/Minor sections")
 
 Be sure to click "Update" to save your changes.
 
