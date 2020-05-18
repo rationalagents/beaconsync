@@ -51,4 +51,4 @@ History
 ---
 
 This concept and implementation came about as part of a volunteer effort for Discovery Center of Idaho
-(http://www.dcidaho.org) to improve exhibit signage and depth of available information. Please feel free to use it and give me feedback!
+(https://www.dcidaho.org/) to improve exhibit signage and depth of available information. Please feel free to use it and give me feedback!
